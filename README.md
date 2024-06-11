@@ -7,6 +7,21 @@ It is **highly modular** becouse of its `Hand` class that is mainly adaptable to
 
 ## How this works?
 
+<div style="text-align: start; display: grid; grid-template-columns: 1fr 1fr;">
+  <div align="start">
+    Handflow uses the <a href="https://ai.google.dev/edge/mediapipe/solutions/vision/gesture_recognizer">Mediapipe</a> gesture recognition task,<br>mixed with some python OS handling libraries.<br>Here is the flowchart:
+    <br><br>
+    <img src="imgs/flowchart.png" width="60%"/>
+  </div>
+  <div>
+    <img src="imgs/landmarks.png" width="80%"/>
+    <br>
+    In deep, to know where each hand point is located in the space, Mediapipe builds a <a href="https://ai.google.dev/edge/mediapipe/solutions/vision/gesture_recognizer">landmarks structure</a> as explained in the picture above.
+    <br><br>
+    As result, Handflow produces a frame like this:
+    <img src="imgs/pic.png" width="80%"/>
+  </div>
+</div>
 
 ## Project structure
 ```
@@ -24,7 +39,7 @@ Build your own handler by modifying this two files in order to do run the code y
 
 ### Configuration
 Setup your settings in the `config.py` file.
-Then install all the required packages with
+Then, install all the required packages with
 ```
 pip install -r requirements.txt
 ```
@@ -45,9 +60,9 @@ data
 ├── open
 └── none
 ```
-As you can see this project came across with 4 default gestures:
+As you can see this project has been built with 4 default gestures:
 - `open` -> Move the mouse cursor around the screen
-- `fist` -> Drag the current active window
+- `fist` -> Drag the currently active window
 - `pinch` -> Drag and click with the left mouse button
 - `scroll` -> Scroll up/down \
 The folder named `none` contains random pictures that shouldn't be classified as recognized gestures.
