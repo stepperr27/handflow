@@ -6,22 +6,24 @@ Handflow was born as a project for a scholarship. It is a **hand gesture recogni
 It is **highly modular** becouse of its `Hand` class that is mainly adaptable to every need.
 
 ## How this works?
-
-<div style="text-align: start; display: grid; grid-template-columns: 1fr 1fr;">
-  <div align="start">
-    Handflow uses the <a href="https://ai.google.dev/edge/mediapipe/solutions/vision/gesture_recognizer">Mediapipe</a> gesture recognition task,<br>mixed with some python OS handling libraries.<br>Here is the flowchart:
-    <br><br>
-    <img src="imgs/flowchart.png" width="60%"/>
-  </div>
-  <div>
-    <img src="imgs/landmarks.png" width="80%"/>
-    <br>
-    In deep, to know where each hand point is located in the space, Mediapipe builds a <a href="https://ai.google.dev/edge/mediapipe/solutions/vision/gesture_recognizer">landmarks structure</a> as explained in the picture above.
-    <br><br>
-    As result, Handflow produces a frame like this:
-    <img src="imgs/pic.png" width="80%"/>
-  </div>
-</div>
+<table>
+  <tr>
+    <td>
+      Handflow uses the <a href="https://ai.google.dev/edge/mediapipe/solutions/vision/gesture_recognizer">Mediapipe</a> gesture recognition       task, mixed with some python OS handling libraries.<br>Here is the flowchart:
+      <br><br>
+      <img src="imgs/flowchart.png" width="100%"/>
+    </td>
+    <td>
+      <img src="imgs/landmarks.png" width="80%"/>
+      <br>
+      In deep, to know where each hand point is located in the space, Mediapipe builds a <a href="https://ai.google.dev/edge/mediapipe/solutions/vision/gesture_recognizer">landmarks structure</a> as explained in the picture above.
+      <br><br>
+      As result, Handflow produces a frame like this:
+      <br>
+      <img src="imgs/pic.png" width="80%"/>
+    </td>
+  </tr>
+</table>
 
 ## Project structure
 ```
