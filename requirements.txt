@@ -1,0 +1,7 @@
+opencv-python==4.9.0.80
+mediapipe==0.10.11
+PyAutoGUI==0.9.54
+pynput==1.7.6
+termcolor==2.4.0
+pyobjc-framework-ScriptingBridge==9.0.1
+win32gui
