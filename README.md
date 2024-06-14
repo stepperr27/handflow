@@ -70,6 +70,6 @@ As you can see this project has been built with 4 default gestures:
 The folder named `none` contains random pictures that shouldn't be classified as recognized gestures.
 
 ## Other
-The folder `servo_motors` contains a project implementation where you can control 2 servo motors by sending trough UDP 8 bytes representing the x and y coordinate. \
-Basically you can run the server code on a microcontroller running micropython and then invoke the `move_servo(deg)` - passing a tuple `(coords.x, coords.y)` - function when a gesture is being recognized.
+The folder `servo_motors` contains a project implementation where you can control 2 servo motors by sending through UDP 8 bytes representing the x and y coordinate. \
+Basically you can run the server code on a microcontroller running CircuitPython and then invoke the `move_servo(deg)` - passing a tuple `(coords.x, coords.y)` - function when a gesture is being recognized.
 
